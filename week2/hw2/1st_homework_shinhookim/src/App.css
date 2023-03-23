@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+label {
+  margin-right: 3rem;
+}
