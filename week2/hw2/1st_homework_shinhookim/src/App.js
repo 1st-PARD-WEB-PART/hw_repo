@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 
@@ -21,7 +20,8 @@ function App() {
   const [formData, setFormData] = useState(initialFormData);
 
   /*
-    If you pass a Map object as a dependency to the useEffect hook, the effect will only re-run if the reference to the Map object changes. 
+    If you pass a Map object as a dependency to the useEffect hook, 
+    the effect will only re-run if the reference to the Map object changes. 
     Updating a value for a key in the Map will not cause the effect to re-run because it does not change the reference to the Map object.
 
     useEffect(() => localStorage.setItem('storageFormData', formData.toString), [
