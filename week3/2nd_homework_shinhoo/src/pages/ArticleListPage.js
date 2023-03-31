@@ -1,21 +1,34 @@
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 
-function ArticleListPage() {
+import "../styles/ArticleListPage.css";
+
+const ArticleListPage = () => {
   return (
-    <>
+    <div>
       <Outlet />
       <ul>
-        <li>
-          <Link to="/articles/1">Article 1</Link>
-        </li>
-        <li>
-          <Link to="/articles/2">Article 2</Link>
-        </li>
-        <li>
-          <Link to="/articles/3">Article 3</Link>
-        </li>
+        <ArticleItem id={1} />
+        <ArticleItem id={2} />
+        <ArticleItem id={3} />
       </ul>
-    </>
+    </div>
+  );
+};
+
+const ArticleItem = ({ id }) => {
+  const activeStyle = {
+    color: 'red',
+    fontSize: 21,
+  };
+  return (
+    <li>
+      <NavLink
+        to={`/articles/${id}`}
+        style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      >
+        게시글 {id}
+      </NavLink>
+    </li>
   );
 };
 

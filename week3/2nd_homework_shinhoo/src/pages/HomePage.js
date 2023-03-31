@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/homepage.css";
 
 function HomePage() {
   return (
@@ -11,9 +12,9 @@ function HomePage() {
         
       <ul>
       
-        <li><a href="/profile/ksh">김신후의 프로파일</a></li>
-        <li><a href="/profile/ash">애슐리의 프로파일</a></li>
-        <li><a href="/profile/iu">아이유의 프로파일</a></li>
+        <li><a href="/profile/Elon">Elon의 프로파일</a></li>
+        <li><a href="/profile/Steve">Steve의 프로파일</a></li>
+        <li><a href="/profile/Lee">Lee의 프로파일</a></li>
         <li><a href="/profile/xxx">아무개의 프로파일</a></li>
         <li>
           <Link to="/articles">게시글 목록</Link>

@@ -1,0 +1,62 @@
+/* CSS for My Homepage */
+
+/* Set styles for the div container */
+div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Set styles for the h1 element */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Set styles for the p element */
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Set styles for the ul element */
+  ul {
+    list-style: none;
+    margin-bottom: 30px;
+  }
+  
+  /* Set styles for the li element */
+  li {
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Set hover effect for the text of the li element */
+  li:hover > a {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+  }
+  
+  /* Set styles for the a element */
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  /* Set styles for the Link component */
+  Link {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+  
+  

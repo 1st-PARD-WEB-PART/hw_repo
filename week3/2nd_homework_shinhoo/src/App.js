@@ -7,6 +7,9 @@ import ArticleListPage from './pages/ArticleListPage';
 import ArticlePage from './pages/ArticlePage';
 import NotFound from './pages/NotfoundPage';
 import Layout from './pages/Layout';
+import MyPage from './pages/MyPage';
+import LoginPage from './pages/LoginPage';
+
 
 function MaterialApp() {
   return (
@@ -17,13 +20,12 @@ function MaterialApp() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/profile/:username" element={<ProfilePage />} />
         </Route>
-
         <Route path="/articles" element={<ArticleListPage />}>
           <Route path=":id" element={<ArticlePage />} />
         </Route>
-        
         <Route path="*" element={<NotFound />} />
-
+        <Route path='/login' element={<LoginPage/>}/>
+      <Route path='/my-page' element={<MyPage/>}/>
       </Routes>
     </Router>
   );
