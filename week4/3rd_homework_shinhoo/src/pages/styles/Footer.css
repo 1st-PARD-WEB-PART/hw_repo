@@ -1,0 +1,14 @@
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-flow: wrap;
+}
+
+.footer-small-text {
+    padding: 1em;
+}
+
+.footer-bold-text{
+    justify-content: start;
+}
